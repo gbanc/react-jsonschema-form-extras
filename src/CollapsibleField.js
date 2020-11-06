@@ -35,6 +35,7 @@ function CollapseMenu(props) {
     uiSchema: {
       collapse: {
         icon: {
+          valid = "glyphicon glyphicon-plus-sign",
           enabled = "glyphicon glyphicon-chevron-down",
           disabled = "glyphicon glyphicon-chevron-right",
           add = "glyphicon glyphicon-plus-sign",
@@ -98,6 +99,12 @@ function CollapseMenu(props) {
           <i
             style={{ color: collapseGlyphColor }}
             className={collapsed ? disabled : enabled}
+          />
+        </a>
+        <a style={{ float: "right" }}>
+          <i
+            style={{ color: collapseGlyphColor }}
+            className={"FUCKYOU"}
           />
         </a>
         {actions.map((action, i) => (
@@ -270,6 +277,7 @@ CollapsibleField.propTypes = {
     collapse: PropTypes.shape({
       field: PropTypes.string.isRequired,
       icon: PropTypes.shape({
+        valid: PropTypes.string,
         enabled: PropTypes.string,
         disabled: PropTypes.string,
         add: PropTypes.string,
