@@ -104,7 +104,7 @@ function CollapseMenu(props) {
         <a style={{ float: "right" }}>
           <i
             style={{ color: collapseGlyphColor }}
-            className={"FUCKYOU"}
+            className={valid}
           />
         </a>
         {actions.map((action, i) => (
